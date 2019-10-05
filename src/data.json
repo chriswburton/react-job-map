@@ -1,0 +1,14 @@
+{
+  "jobs": [
+    {
+      "title": "Senior Software Developer",
+      "description": "My client is looking for a Senior Software Developer to join an exciting team based in Bristol.",
+      "salary": "£40,000 - £60,000 DOE",
+      "locationStr": "Bristol",
+      "locationCoords": {
+        "lat": 51.454514,
+        "lng": -2.587910
+      }
+    }
+  ]
+}
