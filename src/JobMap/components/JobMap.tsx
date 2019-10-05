@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { FC } from 'react';
 import GoogleMap from './GoogleMap';
 import Jobs from './Jobs';
 
-const JobMap: React.FC = () => <>
-    <GoogleMap />
+const JobMap: FC = () => <>
+    <GoogleMap
+        lat={51.5}
+        lng={-0.1}
+        jobs={[]}
+    />
     <Jobs />
 </>;
 
