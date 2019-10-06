@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# lambda dependencies
+/lambda/node_modules
+
 # testing
 /coverage
 
