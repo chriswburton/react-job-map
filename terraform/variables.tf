@@ -1,9 +1,9 @@
-variable "region" {
-  type    = "string"
-  default = "eu-west-1"
-}
-
 variable "name" {
   type    = "string"
   default = "get-jobs"
+}
+
+variable "log_retention" {
+  type    = "string"
+  default = "7"
 }

@@ -3,13 +3,15 @@ import data from './data.json';
 
 interface LambdaResponse {
     statusCode: number;
+    headers: { [x: string]: string }
     body: string;
 }
 
 export const getJobs: Handler = (event: any, context: Context, callback: Callback) => {
     const response: LambdaResponse = {
         statusCode: 200,
-        body: JSON.stringify(data)
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data.jobs)
     };
 
     callback(null, response);
