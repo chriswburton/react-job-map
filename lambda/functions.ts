@@ -6,15 +6,11 @@ interface LambdaResponse {
     body: string;
 }
 
-const getJobs: Handler = (event: any, context: Context, callback: Callback) => {
+export const getJobs: Handler = (event: any, context: Context, callback: Callback) => {
     const response: LambdaResponse = {
         statusCode: 200,
         body: JSON.stringify(data)
     };
 
     callback(null, response);
-};
-
-export {
-    getJobs
 };

@@ -8,6 +8,14 @@
 # lambda dependencies
 /lambda/node_modules
 
+# lambda code zip
+/lambda/dist
+/lambda/bundle.zip
+
+# terraform version
+/terraform/.terraform
+/terraform/terraform.*
+
 # testing
 /coverage
 
