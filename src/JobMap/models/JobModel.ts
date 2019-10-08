@@ -12,7 +12,7 @@ interface Job {
 
 class JobModel implements Job {
     title = 'No title provided';
-    description = 'No job descriptio provided';
+    description = 'No job description provided';
     salary = 'Unknown';
     locationStr = 'UK';
     locationCoords = { lat: 0, lng: 0 };
