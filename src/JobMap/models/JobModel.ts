@@ -1,13 +1,13 @@
 interface Job {
-    title: string;
-    description: string;
-    salary: string;
-    locationStr: string;
-    locationCoords: {
-        lat: number;
-        lng: number;
+    readonly title: string;
+    readonly description: string;
+    readonly salary: string;
+    readonly locationStr: string;
+    readonly locationCoords: {
+        readonly lat: number;
+        readonly lng: number;
     }
-    dateAdded: Date
+    readonly dateAdded: Date
 }
 
 class JobModel implements Job {

@@ -10,7 +10,10 @@ interface LambdaResponse {
 export const getJobs: Handler = (event: any, context: Context, callback: Callback) => {
     const response: LambdaResponse = {
         statusCode: 200,
-        headers: {'Content-Type': 'application/json'},
+        headers: {
+            'Access-Control-Allow-Origin' : '*',
+            'Content-Type': 'application/json'
+        },
         body: JSON.stringify(data.jobs)
     };
 

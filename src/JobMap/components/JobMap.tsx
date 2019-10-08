@@ -9,7 +9,7 @@ import {fetchedJobs, fetchingJobs} from '../actions';
 import JobModel from '../models/JobModel';
 import {plainToClass} from 'class-transformer';
 
-const API_GATEWAY = 'https://bp0kisos1j.execute-api.eu-west-1.amazonaws.com/Live';
+const API_GATEWAY = 'https://zw6sclhxk2.execute-api.eu-west-1.amazonaws.com/Dev';
 
 const JobMap: FC = () => {
     const jobs: JobModel[] = useSelector(selectJobs);

@@ -1,7 +1,7 @@
 {
   "name": "lambda",
   "version": "1.0.0",
-  "description": "Lambda code for",
+  "description": "Lambda code for returning jobs data",
   "main": "index.js",
   "scripts": {
     "build": "tsc && cd ./dist && zip ../bundle.zip *",
