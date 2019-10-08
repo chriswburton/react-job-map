@@ -1,17 +1,15 @@
-import JobModel from "./models/JobModel";
 import {initialState, JobMapState} from "./state";
+import {ActionTypes, JobActions} from "./actions";
 
-interface Action {
-    type: string;
-    payload?: JobModel[]
-};
-
-const JobMapReducer = (state: JobMapState = initialState, action: Action): JobMapState => {
-    return {
-        isLoading: false,
-        error: null,
-        jobs: []
-    };
+const JobMapReducer = (state: JobMapState = initialState, action: JobActions): JobMapState => {
+    switch (action.type) {
+        case ActionTypes.FETCHING_JOBS:
+            return {...state, jobs: []};
+        case ActionTypes.FETCHED_JOBS:
+            return {...state, jobs: [...action.payload]};
+        default:
+            return state;
+    }
 };
 
 export default JobMapReducer;

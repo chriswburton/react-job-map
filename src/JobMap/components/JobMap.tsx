@@ -1,28 +1,37 @@
 import React, { FC } from 'react';
+import useAsyncEffect from 'use-async-effect';
 import GoogleMap from './GoogleMap';
 import Jobs from './Jobs';
-import MapStyle from "../MapStyle";
-import { connect } from 'react-redux';
-import {RootState} from "../../RootStore";
-import {selectJobs} from "../selectors";
+import MapStyle from '../MapStyle';
+import { useSelector, useDispatch } from 'react-redux';
+import {selectJobs} from '../selectors';
+import {fetchedJobs, fetchingJobs} from '../actions';
+import JobModel from '../models/JobModel';
+import {plainToClass} from 'class-transformer';
 
-const JobMap: FC = ({ jobs }: any) => <>
-    <GoogleMap
-        lat={51.5}
-        lng={-0.1}
-        jobs={[]}
-        styles={MapStyle}
-    />
-    <Jobs />
-</>;
+const API_GATEWAY = 'https://bp0kisos1j.execute-api.eu-west-1.amazonaws.com/Live';
 
-const mapStateToProps = (state: RootState) => ({
-    jobs: selectJobs(state)
-});
+const JobMap: FC = () => {
+    const jobs: JobModel[] = useSelector(selectJobs);
+    const dispatch = useDispatch();
+    useAsyncEffect(async () => {
+        dispatch(fetchingJobs());
+        const response = await fetch(`${API_GATEWAY}/jobs`);
+        const jobsJSON = await response.json();
+        const jobs: JobModel[] = jobsJSON
+            .map((job: any) => plainToClass(JobModel, job));
+        dispatch(fetchedJobs(jobs));
+    }, []);
 
-const mapDispatchToProps = (dispatch: any) => ({});
+    return <>
+        <GoogleMap
+            lat={51.5}
+            lng={-0.1}
+            jobs={jobs}
+            styles={MapStyle}
+        />
+        <Jobs />
+    </>;
+};
 
-export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(JobMap);
+export default JobMap;
