@@ -24,7 +24,7 @@ const MapContainer = styled('div')`
     flex-grow: 1;
 `;
 const JobsContainer = styled('div')`
-    ${tw`flex-none w-full left-0 z-30`}
+    ${tw`flex-none w-full left-0 z-30 overflow-hidden`}
     height: 300px;
 `;
 const JobsVisibilityToggle = styled('div')`
@@ -68,7 +68,9 @@ const JobMap: FC = () => {
         </MapContainer>
         {showJobs && <>
             <JobsContainer>
-                <Jobs />
+                <Jobs
+                    jobs={jobs}
+                />
             </JobsContainer>
         </>}
     </UIWrapper>;

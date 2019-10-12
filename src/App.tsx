@@ -14,7 +14,6 @@ const HeaderContainer = styled('div')`
 `;
 
 const PageContainer = styled('div')`
-  ${tw`bg-purple-400`}
   // open issue with 'flex-grow'
   // https://github.com/bradlc/babel-plugin-tailwind-components/issues/32
   flex-grow: 1;

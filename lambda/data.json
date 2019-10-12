@@ -9,6 +9,106 @@
         "lat": 51.454514,
         "lng": -2.587910
       }
+    },
+    {
+      "title": "Full Stack JavaScript Developer",
+      "description": "We're recruiting for 3 Full Stack JavaScript Developers to join companies in Bath and the surrounding area. This a great opportunity for growth and to work in emerging technologies",
+      "salary": "£50,000",
+      "locationStr": "Bath",
+      "locationCoords": {
+        "lat": 51.3751,
+        "lng": -2.36172
+      }
+    },
+    {
+      "title": "React Frontend Expert",
+      "description": "Premier Recruitment - Join a fantastic agency delivering cutting edge solutions to multi-national customers.",
+      "salary": "£65k",
+      "locationStr": "Bristol",
+      "locationCoords": {
+        "lat": 52.011234,
+        "lng": -2.537910
+      }
+    },
+    {
+      "title": "Senior UX Developer",
+      "description": "Due to a recent period of extreme growth, my client is looking for an experienced full stack developer with a rich User Experience skillset.",
+      "salary": "£40,000",
+      "locationStr": "Bristol",
+      "locationCoords": {
+        "lat": 51.403312,
+        "lng": -2.398291
+      }
+    },
+    {
+      "title": "Junior Application Developer",
+      "description": "Looking to develop your skills or get your first industry role? We're looking for a talented junior developer to join our team (minimum 12months experience).",
+      "salary": "32k",
+      "locationStr": "Bristol",
+      "locationCoords": {
+        "lat": 51.412202,
+        "lng": -2.432113
+      }
+    },
+    {
+      "title": "Full Stack Engineer (Angular/Spring MVC)",
+      "description": "We're a TDD team working with an Agile/SCRUM methodology - Could you fill the role?",
+      "salary": "£50,000 - £70,000",
+      "locationStr": "Bristol North",
+      "locationCoords": {
+        "lat": 51.452343,
+        "lng": -2.432113
+      }
+    },
+    {
+      "title": "Part-time E-commerce/SEO Specialist",
+      "description": "SalesCorp Associates are looking to expand their e-commerce team with a Salesforce/Wordpress developer. Someone with a great deal of experience to bring to the team is essential for this role.",
+      "salary": "£38,000 (Pro-rata)",
+      "locationStr": "Bristol",
+      "locationCoords": {
+        "lat": 51.453245,
+        "lng": -2.502354
+      }
+    },
+    {
+      "title": "Tech Lead - JavaScript/React/Node.js",
+      "description": "A brand new Bristol digital-marketing startup is looking to hire their first developer. This will be an amazing opportunity to shape the product and the team.",
+      "salary": "£85,000",
+      "locationStr": "Bristol",
+      "locationCoords": {
+        "lat": 51.422362,
+        "lng": -2.590221
+      }
+    },
+    {
+      "title": "Dev Ops Lead (Java/Terraform/AWS CloudFormation)",
+      "description": "My client is a petroleum conglomerate operating in 7 countries. The business is looking for a Development Operations Lead to help reduce cost and move more of their infrastructure to the cloud.",
+      "salary": "£52,000 - £62,000",
+      "locationStr": "Bristol",
+      "locationCoords": {
+        "lat": 51.487342,
+        "lng": -2.602424
+      }
+    },
+    {
+      "title": "Trainee Web Designer (HTML, JS, CSS)",
+      "description": "Ready for a new challenge? Excited to take on a new career? This is the opportunity for you!",
+      "salary": "£20k (To be reviewed every 6 months)",
+      "locationStr": "Bristol",
+      "locationCoords": {
+        "lat": 51.424235,
+        "lng": -2.612345
+      }
+    },
+    {
+      "title": "Lead Software Architect",
+      "description": "Optima Insurance Ltd is seeking a Lead Software Architect to join their exciting team in Bristol. The role provides the opportunity to work across many distributed systems.",
+      "salary": "£67,500",
+      "locationStr": "Bristol",
+      "locationCoords": {
+        "lat": 51.453213,
+        "lng": -2.654325
+      }
     }
   ]
 }
