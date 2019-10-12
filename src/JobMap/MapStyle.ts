@@ -4,7 +4,13 @@ export default [
         "elementType": "labels.text.fill",
         "stylers": [
             {
-                "color": "#ffffff"
+                "saturation": 36
+            },
+            {
+                "color": "#333333"
+            },
+            {
+                "lightness": 40
             }
         ]
     },
@@ -13,7 +19,13 @@ export default [
         "elementType": "labels.text.stroke",
         "stylers": [
             {
-                "visibility": "off"
+                "visibility": "on"
+            },
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 16
             }
         ]
     },
@@ -31,7 +43,10 @@ export default [
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#c9323b"
+                "color": "#fefefe"
+            },
+            {
+                "lightness": 20
             }
         ]
     },
@@ -40,49 +55,13 @@ export default [
         "elementType": "geometry.stroke",
         "stylers": [
             {
-                "color": "#c9323b"
+                "color": "#fefefe"
+            },
+            {
+                "lightness": 17
             },
             {
                 "weight": 1.2
-            }
-        ]
-    },
-    {
-        "featureType": "administrative.locality",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "lightness": "-1"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative.neighborhood",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "lightness": "0"
-            },
-            {
-                "saturation": "0"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative.neighborhood",
-        "elementType": "labels.text.stroke",
-        "stylers": [
-            {
-                "weight": "0.01"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative.land_parcel",
-        "elementType": "labels.text.stroke",
-        "stylers": [
-            {
-                "weight": "0.01"
             }
         ]
     },
@@ -91,7 +70,10 @@ export default [
         "elementType": "geometry",
         "stylers": [
             {
-                "color": "#c9323b"
+                "color": "#f5f5f5"
+            },
+            {
+                "lightness": 20
             }
         ]
     },
@@ -100,16 +82,22 @@ export default [
         "elementType": "geometry",
         "stylers": [
             {
-                "color": "#99282f"
+                "color": "#f5f5f5"
+            },
+            {
+                "lightness": 21
             }
         ]
     },
     {
-        "featureType": "road",
-        "elementType": "geometry.stroke",
+        "featureType": "poi.park",
+        "elementType": "geometry",
         "stylers": [
             {
-                "visibility": "off"
+                "color": "#dedede"
+            },
+            {
+                "lightness": 21
             }
         ]
     },
@@ -118,16 +106,25 @@ export default [
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#99282f"
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 17
             }
         ]
     },
     {
-        "featureType": "road.highway.controlled_access",
+        "featureType": "road.highway",
         "elementType": "geometry.stroke",
         "stylers": [
             {
-                "color": "#99282f"
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 29
+            },
+            {
+                "weight": 0.2
             }
         ]
     },
@@ -136,7 +133,10 @@ export default [
         "elementType": "geometry",
         "stylers": [
             {
-                "color": "#99282f"
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 18
             }
         ]
     },
@@ -145,7 +145,10 @@ export default [
         "elementType": "geometry",
         "stylers": [
             {
-                "color": "#99282f"
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 16
             }
         ]
     },
@@ -154,7 +157,10 @@ export default [
         "elementType": "geometry",
         "stylers": [
             {
-                "color": "#99282f"
+                "color": "#f2f2f2"
+            },
+            {
+                "lightness": 19
             }
         ]
     },
@@ -163,7 +169,10 @@ export default [
         "elementType": "geometry",
         "stylers": [
             {
-                "color": "#090228"
+                "color": "#30c4f1"
+            },
+            {
+                "lightness": 17
             }
         ]
     }

@@ -13,7 +13,7 @@ interface JobsProps {
 };
 
 const Jobs: React.FC<JobsProps> = ({ jobs }) => <JobsContainer>
-    {jobs.map((job: JobModel, index) => <JobCard
+    {jobs.map((job: JobModel, index: number) => <JobCard
         key={index}
         job={job}
     />)}
