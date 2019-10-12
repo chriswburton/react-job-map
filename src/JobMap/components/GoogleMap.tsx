@@ -2,6 +2,7 @@ import React, { ComponentClass, FC } from 'react';
 import {GoogleMap, withGoogleMap, withScriptjs, WithScriptjsProps} from 'react-google-maps';
 import {WithGoogleMapProps} from 'react-google-maps/lib/withGoogleMap';
 import {JobModel} from "../models";
+import Marker from "react-google-maps/lib/components/Marker";
 
 const INITIAL_ZOOM  = 11;
 const API_KEY       = 'AIzaSyB5MghxvalpNlEQVq4sO3nrDDqJEEgKI30';
@@ -20,7 +21,7 @@ interface MapArgs {
     styles?: MapStyleRule[]
 };
 
-const MapContainer: FC<MapArgs> = ({ lat = 51.5, lng = -0.1, jobs = [], styles = null }) => <GoogleMap
+const MapContainer: FC<MapArgs> = ({ lat = 51.44, lng = -2.60, jobs = [], styles = null }) => <GoogleMap
     key={lat + lng}
     defaultCenter={{ lat, lng }}
     defaultZoom={INITIAL_ZOOM}
@@ -30,7 +31,15 @@ const MapContainer: FC<MapArgs> = ({ lat = 51.5, lng = -0.1, jobs = [], styles =
         streetViewControl: false,
         styles
     }}
-></GoogleMap>;
+>
+    {jobs.map((job: JobModel, index) => <Marker
+        key={index}
+        position={{
+            lat: job.locationCoords.lat,
+            lng: job.locationCoords.lng
+        }}
+    />)}
+</GoogleMap>;
 
 const MapElem: ComponentClass<WithGoogleMapProps & WithScriptjsProps & MapArgs & any> = withScriptjs(
     withGoogleMap<WithGoogleMapProps>(

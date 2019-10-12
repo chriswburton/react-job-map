@@ -54,8 +54,8 @@ const JobMap: FC = () => {
     return <UIWrapper>
         <MapContainer>
             <GoogleMap
-                lat={51.5}
-                lng={-0.1}
+                lat={51.44}
+                lng={-2.60}
                 jobs={jobs}
                 styles={MapStyle}
             />
