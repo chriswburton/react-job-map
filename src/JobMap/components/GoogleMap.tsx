@@ -37,9 +37,9 @@ const MapElem: ComponentClass<WithGoogleMapProps & WithScriptjsProps & MapArgs &
         MapContainer as FC
     )
 );
-const loadingElement = <div />;
-const containerElement = <div style={{height: '100vh'}} />;
-const mapElement = <div style={{height: '100vh'}} />;
+const loadingElement = <div style={{height: '100%'}} />;
+const containerElement = <div style={{height: '100%'}} />;
+const mapElement = <div  style={{height: '100%'}} />;
 
 const Map: FC<MapArgs> = ({ lat, lng, jobs, styles }) => <MapElem
     loadingElement={loadingElement}
